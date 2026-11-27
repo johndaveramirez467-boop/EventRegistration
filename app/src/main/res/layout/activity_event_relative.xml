@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp">
+
+    <TextView
+        android:id="@+id/txtTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Event Registration"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/txtEmailLabel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Student Email"
+        android:labelFor="@id/editEmail"
+        android:layout_below="@id/txtTitle"
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:id="@+id/editEmail"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Enter your student email"
+        android:inputType="textEmailAddress"
+        android:layout_below="@id/txtEmailLabel" />
+
+    <TextView
+        android:id="@+id/txtStatus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Not registered yet"
+        android:layout_below="@id/editEmail"
+        android:layout_marginTop="16dp" />
+
+    <Button
+        android:id="@+id/btnRegister"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Register"
+        android:layout_below="@id/txtStatus"
+        android:layout_alignParentEnd="true"
+        android:layout_marginTop="12dp" />
+
+</RelativeLayout>
